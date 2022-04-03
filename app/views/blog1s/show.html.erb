@@ -14,7 +14,7 @@
 <br/>
   <table>
   <%= link_to "Edit", edit_blog1_path(@blog1), class: "btn btn-secondary"%>
-    <%= button_to 'Delete', @blog1, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger" %>
+    <%= link_to 'Delete', @blog1, data: {turbo_method: :delete, turbo_confirm: 'Are you sure?' }, class: "btn btn-outline-danger"%>
   <%= link_to "Back", blog1s_path, class:"btn btn-dark" %>
 
 
